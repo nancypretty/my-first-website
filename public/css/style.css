@@ -47,6 +47,7 @@ body {
     font-family: "Prata";
     font-size: 63px;
     font-weight: 900;
+    display: none;
 }
 
 .dot {
@@ -59,6 +60,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     padding-right: 20px;
+    display: none;
 }
 
 .home-img {
@@ -136,28 +138,51 @@ body {
 }
 
 .project-display {
-    border: 1px solid grey;
+    display: none;
+    margin: auto;
+    width: 295px;
+    text-align: center;
+    border: 1.5px solid grey;
     border-radius: 15px;
     border-style: ridge;
-    box-shadow: 2px 4px 8px #6D9886;
+    overflow: hidden;
+}
+
+.project-display img {
+    object-fit: contain;
 }
 
 .project h3 {
+    font-family: "Prata";
     letter-spacing: 2px;
     font-size: 17px;
     padding-top: 30px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .project h4 {
     margin: 5px 0 65px 0;
     display: inline-block;
     text-align: justify;
-    /* font-weight: 300; */
     font-size: 15px;
     width: 270px;
     height: 150px;
     line-height: 150%;
+}
+
+.framework {
+    object-fit: contain;
+    position: absolute;
+    padding-left: 10px;
+    top: 145px;
+    left: auto;
+    display: none;
+}
+
+.framework .fa-brands {
+    vertical-align: top;
+    margin-right: 8px;
+    font-size: 20px;
 }
 
 .arrow {
@@ -195,6 +220,7 @@ body {
 }
 
 .about-first-content h2 {
+    display: none;
     font-family: "Prata";
     font-size: 20px;
     letter-spacing: 2px;
@@ -214,7 +240,6 @@ body {
 .about-img-bg {
     display: inline-block;
     position: relative;
-    right: 150px;
     height: 180px;
     width: 180px;
     background-color: #6D9886;
@@ -315,10 +340,10 @@ body {
 
 .about-educations {
     width: 830px;
-    display: inline-block;
     position: relative;
     text-align: left;
     color: white;
+    display: none;
 }
 
 .about-educations .top {
