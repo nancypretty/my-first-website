@@ -15,7 +15,14 @@ $(document).ready(function() {
         height: "show"
     }, "slow");
 
-    $(".framework").fadeIn(2500);
+    // $(".framework").fadeIn(2500);
+    $(".project-display").hover(function() {
+        $(".framework").animate({
+            height: "show"
+        }, "slow")
+    }, function() {
+        $(".framework").css("display", "none");
+    });
 
     $(".about-first-content h2").animate({
         height: "show"

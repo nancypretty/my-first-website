@@ -24,24 +24,6 @@ app.get("/about", function(req, res) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(100, function() {
     console.log("Server started on port 100!");
 })
